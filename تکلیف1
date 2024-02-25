@@ -1,0 +1,8 @@
+
+#include <stdio.h>
+
+int main()
+{
+    printf("%c %c %c %c %c %c\n", 77, 79, 83, 76, 69, 77); // M O S L E M
+    return 0;
+}
