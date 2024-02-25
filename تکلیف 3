@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    
+    char str[] = "1234,1222,yuer";
+    
+  
+    int index = 0;
+  
+    char delimiter = ',';
+    
+
+    char *token = strtok(str, &delimiter);
+    
+   
+    while (token != NULL)
+    {
+    
+        printf("index %d: %s\n", index, token);
+       
+        index++;
+        
+       
+        token = strtok(NULL, &delimiter);
+    }
+    
+    
+    printf("\n");
+    
+    
+    char str2[] = "1234@1222@yuer";
+    
+    
+    delimiter = '@';
+    
+    
+    index = 0;
+   
+    token = strtok(str2, &delimiter);
+    
+ 
+    while (token != NULL)
+    {
+        
+        printf("index %d: %s\n", index, token);
+        
+        
+        index++;
+        
+        token = strtok(NULL, &delimiter);
+    }
+    
+
+    return 0;
+}
